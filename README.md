@@ -1,10 +1,10 @@
-# game-of-life
+# Game of Life
 
-FIXME: Write a one-line description of your library/project.
+Game of Life kata implemented in ClojureScript.
 
 ## Overview
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+The Game of Life will be hosted in a ClojureScript based server. A HTML canvas is used for rendering the game.
 
 ## Development
 
@@ -12,9 +12,8 @@ To get an interactive development environment run:
 
     lein fig:build
 
-This will auto compile and send all changes to the browser without the
-need to reload. After the compilation process is complete, you will
-get a Browser Connected REPL. An easy way to try it is:
+This will auto compile and send all changes to the browser without the need to reload. After the compilation process is
+complete, you will get a Browser Connected REPL. An easy way to try it is:
 
     (js/alert "Am I connected?")
 
@@ -29,9 +28,10 @@ To create a production build run:
 	lein clean
 	lein fig:min
 
+## Links
 
-## License
-
-Copyright © 2018 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
+- [Wikipedia: Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) - contains visualization of
+  the different shapes / generators / visual building blocks
+- [Canvas visualizing an implementation of the Game of Life](https://playgameoflife.com/) - graphical visualization including rules
+- YouTube: Conway's Game of Life in [Dylan Beattie: The Art of Code](https://www.youtube.com/watch?v=6avJHaC3C2U&t=263s) - NDC London, 2020.
+- [Kata-Log: Game of Life Kata](https://kata-log.rocks/game-of-life-kata)
