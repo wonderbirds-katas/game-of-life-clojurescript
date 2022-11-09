@@ -24,6 +24,7 @@
   (.stroke ctx))
 
 (init-canvas)
-(draw-cell 0 0)
-(draw-cell 1 1)
-(draw-cell 1 2)
+(loop [i 0]
+  (draw-cell i 0)
+  (if (< i 10)
+    (recur (inc i))))
