@@ -30,8 +30,15 @@ To create a production build run:
 
 ## Links
 
+### Game of Life
+
 - [Wikipedia: Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) - contains visualization of
   the different shapes / generators / visual building blocks
 - [Canvas visualizing an implementation of the Game of Life](https://playgameoflife.com/) - graphical visualization including rules
 - YouTube: Conway's Game of Life in [Dylan Beattie: The Art of Code](https://www.youtube.com/watch?v=6avJHaC3C2U&t=263s) - NDC London, 2020.
 - [Kata-Log: Game of Life Kata](https://kata-log.rocks/game-of-life-kata)
+
+### ClojureScript
+
+- [Transforming Data with ClojureScript](https://langintro.com/cljsbook/) - an interactive book on ClojureScript, data processing and the JavaScript canvas API.
+- [mdn web docs: Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) - Mozilla Canvas Web API documentation (MDN).
