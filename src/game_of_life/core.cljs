@@ -32,9 +32,12 @@
   (.stroke ctx))
 
 (init-canvas)
+(defn draw-frame [x]
+  (draw-cell x 0))
+
 (go
   (loop [i 0]
-    (draw-cell i 0)
-    (<! (timeout 300))
+    (draw-frame i)
+    (<! (timeout 50))
     (if (< i 10)
       (recur (inc i)))))
