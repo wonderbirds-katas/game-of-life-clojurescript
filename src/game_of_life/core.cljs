@@ -1,4 +1,12 @@
-(ns ^:figwheel-hooks game-of-life.core)
+(ns ^:figwheel-hooks game-of-life.core
+  (:require-macros
+    [cljs.core.async.macros :refer [go]])
+  (:require [cljs.core.async :refer [chan close!]]))
+
+(defn timeout [ms]
+  (let [c (chan)]
+    (js/setTimeout (fn [] (close! c)) ms)
+    c))
 
 (def canvas (.getElementById js/document "canvas"))
 (def ctx (.getContext canvas "2d"))
@@ -24,7 +32,9 @@
   (.stroke ctx))
 
 (init-canvas)
-(loop [i 0]
-  (draw-cell i 0)
-  (if (< i 10)
-    (recur (inc i))))
+(go
+  (loop [i 0]
+    (draw-cell i 0)
+    (<! (timeout 300))
+    (if (< i 10)
+      (recur (inc i)))))
