@@ -7,7 +7,8 @@
   :min-lein-version "2.7.1"
 
   :dependencies [[org.clojure/clojure "1.10.0"]
-                 [org.clojure/clojurescript "1.11.4"]]
+                 [org.clojure/clojurescript "1.11.4"]
+                 [org.clojure/core.async "1.6.673"]]
 
   :source-paths ["src"]
 

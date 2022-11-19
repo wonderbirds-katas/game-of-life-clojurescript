@@ -42,3 +42,7 @@ To create a production build run:
 
 - [Transforming Data with ClojureScript](https://langintro.com/cljsbook/) - an interactive book on ClojureScript, data processing and the JavaScript canvas API.
 - [mdn web docs: Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) - Mozilla Canvas Web API documentation (MDN).
+
+### Used Libraries
+
+- [core.async](https://github.com/clojure/core.async) - provides a timeout mechanism
