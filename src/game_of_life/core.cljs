@@ -1,8 +1,11 @@
 (ns ^:figwheel-hooks game-of-life.core
   (:require-macros
     [cljs.core.async.macros :refer [go]])
-  (:require [cljs.core.async :refer [chan close!]]))
+  (:require [cljs.core.async :refer [chan close!]]
+            [clojure.core.matrix :as mat]))
 
+;; Copied from David Nolen's Gist at
+;; https://gist.github.com/swannodette/5882703
 (defn timeout [ms]
   (let [c (chan)]
     (js/setTimeout (fn [] (close! c)) ms)
@@ -33,6 +36,7 @@
 
 (init-canvas)
 (defn draw-frame [x]
+  (println (mat/shape (mat/zero-matrix 3 3)))
   (draw-cell x 0))
 
 (go

@@ -8,7 +8,9 @@
 
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [org.clojure/clojurescript "1.11.4"]
-                 [org.clojure/core.async "1.6.673"]]
+                 [org.clojure/core.async "1.6.673"]
+                 [net.mikera/core.matrix "0.62.0"]
+                 [thinktopic/aljabr "0.1.1"]]
 
   :source-paths ["src"]
 
